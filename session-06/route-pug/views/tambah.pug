@@ -1,0 +1,17 @@
+html
+  head
+    title= title
+  body
+    h3= message
+
+    a(href="/") Daftar Peserta
+    a(href="/tambah") Tambah Peserta
+
+    hr
+
+    form(action="/tambah", method="post")
+      label(for="nama") Nama
+      input(type="text", name="nama")#nama
+      br
+      br
+      input(type="submit", value="Simpan Data")
